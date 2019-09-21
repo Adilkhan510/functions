@@ -35,12 +35,21 @@ let string1 = num2.split('')
 
 console.log(string1); 
 
-numSplit = (num) => {
-    let arr = num.toString([10]).split('');
-    for(i=0; con i<arr.length; i++) {
-        arr += arr[i]
-
-    } return arr
+numSplit = (number) => {
+    let num = number;
+    let sum = null;
+    let arr = number.toString("10").split("");
+    for(let i=0; i<arr.length; i++) {
+        arr[i] = parseInt(arr[i]);
+        sum += arr[i]; 
+    } return sum
 
 }
 console.log(numSplit(42))
+
+//  Pythogoras 
+pythogoras = (sideA, sideB) => {
+    sideC = (Math.pow(sideA,2) + Math.pow(sideB,2));
+    return sideC;
+}
+console.log(pythogoras(4,6)); 
