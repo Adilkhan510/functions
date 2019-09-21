@@ -19,3 +19,28 @@ checkPalindrome = (string) => {
 }
 
 console.log(checkPalindrome("TENET"));
+
+// DIGIT SUM 
+digitSum = (num)=>{
+    num1= num.toString('').split('');
+    for(i=0; i<num1.length; i++) {
+        num1 += num[i];
+    } 
+
+}
+digitSum(20);
+
+let num2 = 22;
+let string1 = num2.split('')
+
+console.log(string1); 
+
+numSplit = (num) => {
+    let arr = num.toString([10]).split('');
+    for(i=0; con i<arr.length; i++) {
+        arr += arr[i]
+
+    } return arr
+
+}
+console.log(numSplit(42))
