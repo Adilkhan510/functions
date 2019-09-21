@@ -44,12 +44,23 @@ numSplit = (number) => {
         sum += arr[i]; 
     } return sum
 
-}
+};
 console.log(numSplit(42))
 
 //  Pythogoras 
 pythogoras = (sideA, sideB) => {
     sideC = (Math.pow(sideA,2) + Math.pow(sideB,2));
     return sideC;
-}
+};
 console.log(pythogoras(4,6)); 
+
+// Write a function sumArray that takes an array as an argument. The array should contain numbers. The function should return the sum of the numbers in the array. Do not use .reduce().
+
+sumArray = (array) => {
+    let sum= null;
+    for(i=0; i<array.length; i++) {
+        sum += parseInt(array[i]);
+    } return sum;
+}
+
+console.log(sumArray([1, 2, 3, 4, 5, 6]))
