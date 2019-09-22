@@ -74,5 +74,14 @@ checkPrime = (num) => {
         } 
     } return true;
 }
+printPrimes = (num) => {
+    primes = [];
+    for (i=2; i<=num; i++){
+        checkPrime(i);
+        if(checkPrime(i)== true) {
+        primes.push(i);
+        }
+    }return primes;
+}
+console.log(printPrimes(97));
 
-console.log(checkPrime(9)) 
