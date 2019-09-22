@@ -63,4 +63,16 @@ sumArray = (array) => {
     } return sum;
 }
 
-console.log(sumArray([1, 2, 3, 4, 5, 6]))
+console.log(sumArray([1, 2, 3, 4, 5, 6]));
+
+// A Prime number is a number that is not evenly divisible by another number except 1 and itself. If you want to read more deeply about it, go here. To test whether a number is Prime, you only need to test as far as the square root of that number. This is advisable for optimization and testing large numbers.
+
+checkPrime = (num) => {
+    for (let i = 2; i<= Math.sqrt(num); i++) {
+        if(num % i === 0) {
+            return false;
+        } 
+    } return true;
+}
+
+console.log(checkPrime(9)) 
